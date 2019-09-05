@@ -1,0 +1,11 @@
+【rootユーザーで実行】
+create database reservator_db default character set utf8mb4;
+create user 'reservator'@'localhost' identified by 'admin';
+grant all privileges on `reservator_db`.* to 'reservator'@'localhost';
+
+
+
+【reservator_db接続語に実行】
+set character_set_client=utf8mb4;
+set character_set_connection=utf8mb4;
+set character_set_results=utf8mb4;
